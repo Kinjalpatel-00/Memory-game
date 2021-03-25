@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CS5003-P1-Memory Game</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="indexCSS.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row alert alert-dark">
+            <div class="col-12">
+                <h2>Matchy Doggy</h2>
+            </div>
+            <div class="col-12">
+                <h5>A game by 200028225 for CS5003 - Practical 1</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-9">
+                <div class="row alert alert-secondary">
+                    <div class="col-12">
+                        <div id="breeds" class="row">
+
+
+                        </div>
+                    </div>
+                    <div class="col-12 alert alert-dark">
+                        <button id="previous" class="btn btn-dark btn-sm">Previous</button>
+                        <button id="next" class="btn btn-dark float-right btn-sm">Next</button>
+                    </div>
+                </div>
+
+                <div class="row alert alert-info">
+                    <div id="selectedBreeds col-2">Selected Breeds:</div>
+                    <div class="col-10">
+                        <p id="breedslist"></p>
+                    </div>
+                </div>
+
+                <div class="row alert alert-warning">
+                    <div class="col-5">
+                        <div class="row">
+                            <p class="levelText">Select Dificluty level: &nbsp;</p>
+                            <select name="levels" id="levelSelection">
+                                <option value="Easy">Easy</option>
+                                <option selected value="Noraml">Normal</option>
+                                <option value="Hard">Hard</option>
+                                <option value="Super Hard">Super Hard</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <button id="startGame" class="btn btn-success"> Start Game</button>
+                        <button id="reset" class="btn btn-danger">Reset the game</button>
+                        <button id="scoreBoard" class="btn btn-danger">Check All Scores</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="timeline" class="timeline col-2  ">
+                        <div class="alert alert-primary">
+                            Time left:
+                            <p id="timer">0</p>
+                        </div>
+                    </div>
+
+                    <div id="tries" class="tries col-2">
+                        <div class="alert alert-primary">
+                            Tries:
+                            <p id="triesCount" >0</p>
+                        </div>
+                    </div>
+                    <div class="col-8 alert alert-secondary" id="message">
+                        Message:
+                    </div>
+                </div>
+                <div id="dogImages" class="row"></div>
+            </div>
+
+            <div class="col-3">
+                <div class="row alert alert-dark" id="scorediv">
+                    <div class="col-12 scoreText">
+                        <h5>Score Board</h5>
+                    </div>
+                    <div class="col-12 scoreText" id="scoreList">
+                        Note: Click on 'Check All Scores' button to get all games score so far.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="indexjs.js"></script>
+    </div>
+</body>
+
+</html>
